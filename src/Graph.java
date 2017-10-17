@@ -44,7 +44,6 @@ public class Graph {
         List<Edge> connections = this.edges.stream()
             .filter(edge ->(edge.getA().equals(vertex)) || (edge.getB().equals(vertex)))
             .collect(Collectors.toList());
-        
         return new HashSet<Vertex>();
     }
 }
